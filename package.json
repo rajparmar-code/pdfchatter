@@ -1,0 +1,25 @@
+{
+  "name": "pdfchatter",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@supabase/ssr": "0.6.1",
+    "@supabase/supabase-js": "2.75.0",
+    "groq-sdk": "latest",
+    "next": "15.5.20",
+    "pdf-parse": "2.4.5",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "5.7.2"
+  }
+}

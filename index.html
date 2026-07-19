@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>PDFChatter — Ask your documents</title>
+  <meta name="description" content="A calm, intelligent workspace for asking questions about PDFs."/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">✦</span><span>pdf<span class="brand-accent">chatter</span></span></a>
+    <nav><a href="#how">How it works</a><a href="#privacy">Privacy</a><button class="theme-btn" id="themeBtn" aria-label="Toggle theme">◐</button><button class="ghost-btn" id="loginBtn">Sign in</button><button class="primary-btn" id="signupBtn">Get started <span>↗</span></button></nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="eyebrow"><span class="pulse"></span> Your documents, finally conversational</div>
+      <h1>Read less.<br/><em>Understand more.</em></h1>
+      <p class="hero-copy">Drop in a PDF and have a thoughtful conversation with it. Find the signal, clarify the details, and move forward — in seconds.</p>
+      <div class="hero-actions"><button class="primary-btn large" id="heroStart">Upload a PDF <span>↗</span></button><button class="play-btn" id="demoBtn"><span class="play">▶</span> See how it works</button></div>
+      <div class="trust-row"><span>Built for curious minds</span><i></i><span>Private by default</span><i></i><span>Answers with context</span></div>
+    </section>
+    <section class="workspace" id="workspace">
+      <div class="workspace-head"><div><div class="section-kicker">THE WORKSPACE</div><h2>Your next insight is one question away.</h2></div><div class="status"><span class="status-dot"></span> Secure session</div></div>
+      <div class="workspace-grid">
+        <aside class="library panel"><div class="panel-title"><span>Library</span><button class="icon-btn">＋</button></div><div class="empty-library"><div class="file-orb">⌁</div><strong>No documents yet</strong><span>Upload a PDF to begin<br/>your first conversation.</span><button class="outline-btn" id="uploadBtn">Choose a PDF</button></div><div class="library-foot">⌘ <span>Drag & drop supported</span></div></aside>
+        <section class="chat panel"><div class="chat-head"><div class="doc-chip"><span class="pdf-icon">PDF</span><div><strong>Untitled workspace</strong><small>Waiting for a document</small></div></div><button class="more-btn">•••</button></div><div class="chat-empty"><div class="sparkle">✦</div><h3>What would you like to know?</h3><p>Upload a document and ask anything.<br/>I’ll keep answers grounded in your source.</p><div class="suggestions"><button>Summarize the key points <span>↗</span></button><button>What are the main conclusions? <span>↗</span></button><button>Explain this in simple terms <span>↗</span></button></div></div><div class="composer"><input aria-label="Ask a question" placeholder="Ask anything about your document…" disabled/><button disabled>↑</button><small>Answers are generated from your PDF</small></div></section>
+      </div>
+    </section>
+    <section class="how" id="how"><div class="section-kicker">A BETTER WAY TO READ</div><h2>From page one to <em>aha</em> moment.</h2><div class="steps"><article><b>01</b><div class="step-icon">↥</div><h3>Bring your PDF</h3><p>Drop in research, reports, notes, or anything you want to understand better.</p></article><article><b>02</b><div class="step-icon">✦</div><h3>Ask naturally</h3><p>No special commands. Ask in your own words, just like talking to a brilliant colleague.</p></article><article><b>03</b><div class="step-icon">⌁</div><h3>Move with clarity</h3><p>Get concise, source-grounded answers that help you decide what to do next.</p></article></div></section>
+  </main>
+  <footer id="privacy"><div class="brand"><span class="brand-mark">✦</span><span>pdf<span class="brand-accent">chatter</span></span></div><span>Thoughtful answers. Better decisions.</span><span>© 2026 PDFChatter</span></footer>
+  <div class="modal-backdrop" id="modal"><div class="auth-card"><button class="close" id="closeModal">×</button><span class="brand-mark big">✦</span><div class="section-kicker" id="authKicker">WELCOME BACK</div><h2 id="authTitle">Sign in to PDFChatter</h2><p id="authSub">Pick up your thinking where you left off.</p><form id="authForm"><label>Email<input type="email" required placeholder="you@example.com"/></label><label>Password<input type="password" required minlength="6" placeholder="At least 6 characters"/></label><button class="primary-btn full" type="submit" id="authSubmit">Sign in <span>↗</span></button></form><div class="auth-switch"><span id="switchText">New here?</span> <button id="switchAuth" type="button">Create an account</button></div></div></div>
+  <script src="app.js"></script>
+</body></html>
