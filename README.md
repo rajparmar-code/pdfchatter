@@ -23,3 +23,4 @@ GROQ_API_KEY=
 ```
 
 Never commit `.env.local` or expose `GROQ_API_KEY` in browser code.
+live link :- https://youtu.be/YX6JTBlB4dI
